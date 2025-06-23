@@ -10,15 +10,19 @@ A web application that generates handwritten digits using a conditional GAN trai
 - PyTorch implementation
 
 ## File Structure
-handwritten-digit-generator/
-├── .streamlit/
-│ └── config.toml
-├── app.py # Streamlit web application
-├── cgan_mnist.py # GAN training script
-├── generator.pth # Pre-trained generator weights
-├── requirements.txt # Python dependencies
-├── runtime.txt # Python version specification
-└── README.md # This file
+Directory structure:
+└── mehtabashellic-handwritten-digit-generator-by-mehtab-khan/
+    ├── README.md
+    ├── app.py
+    ├── cgan_mnist.py
+    ├── generator.pth
+    ├── requirements.txt
+    ├── runtime.txt
+    ├── setup.sh
+    ├── .devcontainer/
+    │   └── devcontainer.json
+    └── .streamlit/
+        └── config.toml
 
 
 ## Prerequisites
