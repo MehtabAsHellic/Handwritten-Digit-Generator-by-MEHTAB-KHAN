@@ -1,7 +1,5 @@
 # Handwritten Digit Generator Web App
 
-![Generated Digits Example](https://via.placeholder.com/600x200?text=Sample+Generated+Digits)
-
 A web application that generates handwritten digits using a conditional GAN trained on the MNIST dataset. Users can select a digit (0-9) and the app will generate 5 sample images.
 
 ## Features
