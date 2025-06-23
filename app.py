@@ -5,6 +5,25 @@ import torch.nn as nn  # ADDED MISSING IMPORT
 import numpy as np
 from PIL import Image
 import matplotlib.pyplot as plt
+import os
+import subprocess
+import sys
+
+# Install required packages
+def install(package):
+    subprocess.check_call([sys.executable, "-m", "pip", "install", package])
+
+# Check and install PyTorch if missing
+try:
+    import torch
+    import torch.nn as nn
+    print(f"PyTorch version: {torch.__version__}")
+except ImportError:
+    print("Installing PyTorch...")
+    install("torch==2.3.0")
+    install("torchvision==0.18.0")
+    import torch
+    import torch.nn as nn
 
 # Generator Model Definition
 class Generator(nn.Module):
