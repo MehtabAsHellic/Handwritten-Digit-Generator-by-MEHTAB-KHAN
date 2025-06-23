@@ -1,3 +1,15 @@
+# Check PyTorch installation
+try:
+    import torch
+except ImportError:
+    import subprocess
+    import sys
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "torch==2.3.0", "torchvision==0.18.0"])
+    import torch
+
+print(f"Using PyTorch version: {torch.__version__}")
+print(f"CUDA available: {torch.cuda.is_available()}")
+
 # cgan_mnist.py
 import torch
 import torch.nn as nn
